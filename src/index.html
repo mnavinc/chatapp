@@ -3,7 +3,23 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <div id="root"></div>
-        <button>Lets Chat</button>
+        <button onclick="toggleIframe()" title="Chat with us" class="chat-icon"><img id="icon" src="./assets/images/chat.png" /></button>
+        <iframe id="iframe" src="http://localhost:3000" style="display:none"></iframe>
+        <script type="text/javascript">
+            function toggleIframe() {
+                var x = document.getElementById("iframe");
+                var button = document.getElementById("icon");
+                console.log(x.style.display)
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                    button.src = "./assets/images/close.png";
+                    button.title = 'close chat'
+                } else {
+                    x.style.display = "none";
+                    button.src = "./assets/images/chat.png";
+                    button.title = 'Chat with us'
+                }
+            }
+        </script>
     </body>
 </html>
