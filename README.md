@@ -7,7 +7,7 @@ In the project directory, you can run:
 ### `npm start`
 
 Runs the app in the development mode.<br />
-Open `src/index.html` in the browser to view it in the iframe.
+Open `src/index.html` in the browser to view it in the iframe.<br/>
 Open [http://localhost:3000](http://localhost:3000) to view it as responsive application.
 
 The page will reload if you make edits.<br />
